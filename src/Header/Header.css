@@ -1,0 +1,29 @@
+.container-header{
+    display: flex;
+    justify-content: space-around;
+}
+.container-header ul{
+    list-style: none;
+}
+.menu-left,
+.menu-right{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.menu-left li,
+.menu-right li{
+    padding-left: 35px;
+    padding-top: 18px;
+    cursor: pointer;
+}
+
+.menu-right img{
+    width: 20px;
+}
+
+.logo{
+    width: 105px;
+    padding-top: 20px;
+}

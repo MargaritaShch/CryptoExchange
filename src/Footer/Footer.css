@@ -1,0 +1,34 @@
+.container-footer{
+    background: linear-gradient(to right, rgb(63, 81, 181), rgb(100, 181, 246)) rgb(255, 255, 255) ;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+.footer-menu2 li,
+.footer-menu li{
+list-style: none;
+text-align: start;
+color: white;
+font-size: 14px;
+
+}
+
+.footer-menu2 li{
+    
+}
+h3{
+    color: white;
+    font-size: 14px;
+}
+
+.legals{
+    text-align: start;
+    display: grid;
+    justify-content:start;
+}
+
+.disclamer{
+    width: 40%;
+    text-align: start;
+    color: white;
+}
