@@ -1,10 +1,17 @@
 import React,{useState, useEffect} from "react";
-import './Table.css'
+import styles from './Table.module.css'
 import TableRow from "./components/TableRow/TableRow";
 
-const LABELS = []
+const Name = "Name";
+const Price = "Price";
+const MarketCap = "MarketCap";
+const VWAP = 'VWAP(24Hr)'
+const Supply = 'Supply'
+const Volume = "Volume(24Hr)";
+const Change = "Change(24Hr)";
 
 function Table(){
+    const LABELS = [Name,Price,MarketCap,VWAP,Supply,Volume,Change]
     const [cryptoData, setCryptoData] = useState([]);
 
     useEffect(() => {
@@ -26,17 +33,12 @@ function Table(){
 
     return(
     <div>
-        <div className="container-table">
-            <table className="table">
+        <div className={styles.containerTable}>
+            <table className={styles.table}>
                 <thead>
-                    <tr>
-                        <th className="item">Runk</th>
-                        <th className="item2">Name</th>
-                        <th className="item">Price</th>
-                        <th className="item">Market Cap</th>
-                        <th className="item">Volume (24Hr)</th>
-                        <th className="item">Change(24Hr)</th>
-                    </tr>
+                    {LABELS.map((lebel,index)=>(
+                        <th className={styles.item} key ={index}>{lebel}</th>
+                    ))}
                 </thead>
                    
                 <tbody>
@@ -46,7 +48,7 @@ function Table(){
             </div>
 
             <div>
-            <button className="view-more">Viwe More</button>
+            <button className={styles.viewMore}>Viwe More</button>
             </div>
             
         </div>

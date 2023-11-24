@@ -1,0 +1,27 @@
+.num{
+    font-size: 13.5px;
+    text-align: end;
+}
+/* .coins{
+    width: 30px;
+    height: 30px;
+    margin-top: 20px;
+} */
+.nameCoins{
+    display: flex;
+}
+.allNames{
+    display: grid;
+    padding-left: 5px;
+    font-size: 14px;
+    text-align: start;    
+}
+.name{
+    font-size: 14px;
+}
+.shortName{
+margin-top: -15px;
+color: rgba(0, 0, 0, 0.606);
+font-size: 12px;
+
+}

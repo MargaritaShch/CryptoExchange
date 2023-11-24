@@ -1,25 +1,25 @@
-.container-header{
+.containerHeader{
     display: flex;
     justify-content: space-around;
 }
-.container-header ul{
+.containerHeader ul{
     list-style: none;
 }
-.menu-left,
-.menu-right{
+.menuLeft,
+.menuRight{
     display: flex;
     justify-content: space-between;
     
 }
 
-.menu-left li,
-.menu-right li{
+.menuLeft li,
+.menuRight li{
     padding-left: 35px;
     padding-top: 18px;
     cursor: pointer;
 }
 
-.menu-right img{
+.menuRight img{
     width: 20px;
 }
 

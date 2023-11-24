@@ -1,11 +1,11 @@
-.container-footer{
+.containerFooter{
     background: linear-gradient(to right, rgb(63, 81, 181), rgb(100, 181, 246)) rgb(255, 255, 255) ;
     display: flex;
     justify-content: space-around;
     margin-top: 30px;
 }
-.footer-menu2 li,
-.footer-menu li{
+.footerMenu2 li,
+.footerMenu li{
 list-style: none;
 text-align: start;
 color: white;
@@ -13,10 +13,11 @@ font-size: 14px;
 
 }
 
-.footer-menu2 li{
+.footerMenu2 li{
     
 }
-h3{
+
+ h3{
     color: white;
     font-size: 14px;
 }
