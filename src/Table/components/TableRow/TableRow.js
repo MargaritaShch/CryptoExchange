@@ -16,10 +16,16 @@ const TableRow = ({crypto}) => {
             <span className={styles.num}>${parseFloat(crypto.priceUsd).toFixed(2)}</span>
          </td>
          <td>
-            <span className={styles.num}>{parseFloat(crypto.marketCapUsd).toLocaleString('en-US', { style: 'currency', currency: 'USD', minimumFractionDigits: 1, maximumFractionDigits: 1 })}b</span>
+            <span className={styles.num}>{parseFloat(crypto.marketCapUsd /1e9).toLocaleString('en-US', { style: 'currency', currency: 'USD', minimumFractionDigits: 1, maximumFractionDigits: 1 })}b</span>
          </td>
          <td>
-            <span className={styles.num}>{parseFloat(crypto.volumeUsd24Hr).toLocaleString('en-US', { style: 'currency', currency: 'USD', minimumFractionDigits: 1, maximumFractionDigits: 1 })}b</span>
+            <span className={styles.num}>{parseFloat(crypto.vwap24Hr).toLocaleString('en-US', { style: 'currency', currency: 'USD', minimumFractionDigits: 1, maximumFractionDigits: 1 })}b</span>
+         </td>
+         <td>
+            <span className={styles.num}>{parseFloat(crypto.supply/1e6).toFixed(2)}m</span>
+         </td>
+         <td>
+            <span className={styles.num}>{parseFloat(crypto.volumeUsd24Hr /1e9).toLocaleString('en-US', { style: 'currency', currency: 'USD', minimumFractionDigits: 1, maximumFractionDigits: 1 })}b</span>
          </td>
          <td>
             <span className={styles.num}>{parseFloat(crypto.changePercent24Hr).toFixed(2)}%</span>

@@ -1,9 +1,9 @@
 import React from 'react';
 import './App.css';
-import Header from './Header/Header';
-import MarketSnapshot from './MarketSnapshot/MarketSnapshot';
+import Header from './components/Header/Header';
+import MarketSnapshot from './components/MarketSnapshot/MarketSnapshot';
 import Table from './Table/Table';
-import Footer from './Footer/Footer';
+import Footer from './components/Footer/Footer';
 
 
 function App() {
